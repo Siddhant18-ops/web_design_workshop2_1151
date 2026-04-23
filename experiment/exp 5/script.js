@@ -37,6 +37,11 @@ function displayAllEmployees() {
         <td class="${cls}">₹${emp.salary.toLocaleString('en-IN')}</td>
         </tr>`;
     }
+    // inner html is a property of an html element which allows us 
+    // to set or get the html content of that element.
+    // when you set innerhtml,
+    // it replaces the existing content with the new html you provide.
+    
     html += "</tbody></table>";
     showResult(html);
 }
